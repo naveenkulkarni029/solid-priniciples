@@ -4,6 +4,6 @@ import org.nbk.solid.principle.model.Customer;
 
 public interface ReportGenerator {
     
-    public void printReport(Customer customer);
+    public void generateReport(Customer customer);
 
 }

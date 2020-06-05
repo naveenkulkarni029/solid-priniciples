@@ -7,13 +7,16 @@ public class ReportContext {
 
     private ReportGenerator reportGenerator;
 
+    
+    // Dependency Injection Principle
     public ReportContext(ReportGenerator reportGenerator) {
 	super();
 	this.reportGenerator = reportGenerator;
     }
     
+    // Data Abstraction
     public void printReport(Customer customer) {
-	reportGenerator.printReport(customer);
+	reportGenerator.generateReport(customer);
     }
     
     

@@ -1,8 +1,10 @@
-package org.nbk.solid.principle.isp;
+package org.nbk.solid.principle.demo;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import org.nbk.solid.principle.generator.ReportGenerator;
+import org.nbk.solid.principle.isp.context.ReportContext;
 import org.nbk.solid.principle.model.Customer;
 import org.nbk.solid.principle.model.Item;
 import org.nbk.solid.principle.service.BillingService;
@@ -31,6 +33,7 @@ public class ResturantExample {
     }
 
     public void demoRun() {
+	// Single Responsibility Principle
 	BillingService billingService = new BillingService();
 	double bill = billingService.calculateBill(customer, gst);
 	System.out.println("Total Bill amount with GST " + bill);
@@ -38,8 +41,19 @@ public class ResturantExample {
 
 	System.out.println(customer);
 
+	// Interface Segregation Principle
+	// OPEN FOR EXTENSION change the reportType and create new class implementing
+	// reportGenerator Interface.
 	ReportingService service = new ReportingService();
-	service.printReport(customer, "JSON");
+	ReportGenerator reportGenerator = service.printReport(customer, "JSON");
+
+	// Dependency Injection
+	ReportContext context = new ReportContext(reportGenerator);
+	context.printReport(customer);
+
+	// LSP --> Concentrated on DUCK Typing Type Comparison between duck and swan
+	// cannot multi vendor support of dcm images as the vendors can create there
+	// private tags during dicom image acquisition.
     }
 
 }
