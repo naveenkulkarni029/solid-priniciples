@@ -1,6 +1,6 @@
 package org.nbk.solid.principle.isp.context;
 
-import org.nbk.solid.principle.isp.service.ReportGenerator;
+import org.nbk.solid.principle.generator.ReportGenerator;
 import org.nbk.solid.principle.model.Customer;
 
 public class ReportContext {

@@ -1,4 +1,4 @@
-package org.nbk.solid.principle.isp.service;
+package org.nbk.solid.principle.generator;
 
 import org.nbk.solid.principle.model.Customer;
 
