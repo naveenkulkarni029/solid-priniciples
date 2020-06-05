@@ -1,4 +1,4 @@
-package org.nbk.solid.principle.srp.model;
+package org.nbk.solid.principle.model;
 
 import java.util.List;
 

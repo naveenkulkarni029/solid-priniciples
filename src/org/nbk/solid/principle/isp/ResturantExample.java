@@ -1,4 +1,4 @@
-package org.nbk.solid.principle.srp;
+package org.nbk.solid.principle.isp;
 
 import java.util.ArrayList;
 import java.util.List;

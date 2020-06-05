@@ -1,4 +1,4 @@
-package org.nbk.solid.principle.srp.model;
+package org.nbk.solid.principle.model;
 
 public class Item {
 

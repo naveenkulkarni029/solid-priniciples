@@ -1,9 +1,9 @@
-package org.nbk.solid.principle.srp.service;
+package org.nbk.solid.principle.service;
 
 import java.util.List;
 
-import org.nbk.solid.principle.srp.model.Customer;
-import org.nbk.solid.principle.srp.model.Item;
+import org.nbk.solid.principle.model.Customer;
+import org.nbk.solid.principle.model.Item;
 
 public class BillingService {
 
