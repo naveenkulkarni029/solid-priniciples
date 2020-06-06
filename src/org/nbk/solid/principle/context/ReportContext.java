@@ -15,6 +15,7 @@ public class ReportContext {
     }
     
     // Data Abstraction
+    // We are just generating a report. Here we do not know what type of a report will be generated
     public void printReport(Customer customer) {
 	reportGenerator.generateReport(customer);
     }
