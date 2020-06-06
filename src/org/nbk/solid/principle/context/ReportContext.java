@@ -1,4 +1,4 @@
-package org.nbk.solid.principle.isp.context;
+package org.nbk.solid.principle.context;
 
 import org.nbk.solid.principle.generator.ReportGenerator;
 import org.nbk.solid.principle.model.Customer;

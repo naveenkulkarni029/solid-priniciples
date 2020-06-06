@@ -3,8 +3,8 @@ package org.nbk.solid.principle.demo;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.nbk.solid.principle.context.ReportContext;
 import org.nbk.solid.principle.generator.ReportGenerator;
-import org.nbk.solid.principle.isp.context.ReportContext;
 import org.nbk.solid.principle.model.Customer;
 import org.nbk.solid.principle.model.Item;
 import org.nbk.solid.principle.service.BillingService;
