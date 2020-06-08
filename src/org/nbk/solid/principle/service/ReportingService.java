@@ -8,9 +8,14 @@ import org.nbk.solid.principle.reports.impl.PDFReport;
 
 public class ReportingService {
 
-    private ReportGenerator reportGenerator;
+    private String reportType;
 
-    public ReportGenerator printReport(Customer customer, String reportType) {
+    public ReportingService(String reportType) {
+	this.reportType = reportType;
+    }
+
+    public ReportGenerator printReportType() {
+	ReportGenerator reportGenerator = null;
 	if (reportType.equalsIgnoreCase("CSV")) {
 	    reportGenerator = new CSVReport();
 	}

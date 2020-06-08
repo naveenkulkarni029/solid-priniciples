@@ -44,8 +44,8 @@ public class ResturantExample {
 	// Interface Segregation Principle
 	// OPEN FOR EXTENSION change the reportType and create new class implementing
 	// reportGenerator Interface.
-	ReportingService service = new ReportingService();
-	ReportGenerator reportGenerator = service.printReport(customer, "JSON");
+	ReportingService service = new ReportingService("JSON");
+	ReportGenerator reportGenerator = service.printReportType();
 
 	// Dependency Injection
 	ReportContext context = new ReportContext(reportGenerator);
